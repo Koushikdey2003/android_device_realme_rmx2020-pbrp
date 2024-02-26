@@ -21,12 +21,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 
 # Inherit from our custom product configuration
-$(call inherit-product, vendor/twrp/config/common.mk)
+$(call inherit-product, vendor/pb/config/common.mk)
 
 PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,$(LOCAL_PATH)/recovery/root,recovery/root)
 
 PRODUCT_DEVICE := RMX2020
-PRODUCT_NAME := twrp_RMX2020
+PRODUCT_NAME := pb_RMX2020
 PRODUCT_BRAND := realme
 PRODUCT_MODEL := RMX2020
 PRODUCT_MANUFACTURER := realme

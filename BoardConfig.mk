@@ -180,3 +180,7 @@ TARGET_USES_LOGD := true
 
 # Apex
 TW_EXCLUDE_APEX := true
+
+# PBRP Build flags
+PB_TORCH_PATH := /sys/class/leds/flashlight
+PB_TORCH_MAX_BRIGHTNESS := 1
